@@ -1,0 +1,508 @@
+:root{
+    --lightblue: #eaf2fa;
+    --white: #fff;
+    --offWhite: #f7f7f7;
+    --black: black;
+    --brown: #50352B;
+    --gold: 
+  }
+
+  *, 
+  *::before,
+  *::after {
+     font-family: "roboto", sans-serif ;
+     margin: 0;
+     padding: 0; 
+     box-sizing: border-box;
+     color: #50352B;
+     /* background: linear-gradient(46deg, #0a192f 59.61%, #213c63 102.67%) ;  */
+     color: var(--offWhite);
+  }
+
+
+
+  header {
+    /* background: linear-gradient(46deg, #0a192f 59.61%, #213c63 102.67%) ; */
+    text-align: center;
+    margin: 0;
+    /* width: 100vw; */
+  }
+  
+  h1{
+    margin: 0;
+  }
+  
+  .navigation {
+    background: linear-gradient(46deg, #0a192f 59.61%, #213c63 102.67%) ; 
+  }
+  
+  nav {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+  }
+  
+  nav a{
+    padding: 14px 20px;
+    color: var(--offWhite);
+    /* Removed the links underline for cleaner look */
+    text-decoration: none;
+    transition: 1s;
+  }
+
+  nav a:hover{
+    color: gold;
+  }
+
+  .active{
+    color:  gold;
+    padding-right: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+
+  }
+  
+  /* All containers will be flex on larger screens */
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    /* margin-bottom: 100px;  */
+  }
+
+  .projectContainer{
+    border-right: var(--lightblue) solid 6px;
+    border-bottom: var(--lightblue) solid 6px;
+    
+  }
+
+  .projectContainer a{
+    text-decoration: none;
+  }
+  
+  
+  .container-1{
+    display: flex;
+    margin: 0;
+  }
+  
+  .container-1 h2 {
+      margin: 0;
+      font-size: xx-large;
+  }
+  
+  .container-1 p {
+    margin: 0;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: var(--lightblue) 2px solid;
+    padding: 4px;
+    padding: 50px;
+    height: 90vh;
+  }
+  
+  .profPic {
+    height: 250px;
+    width: 250px;
+    /* 50% border radius makes profile picture a perfect circle */
+    border-radius: 50%;
+  }
+  
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-right: var(--lightblue) 2px solid;
+    padding: 4px;
+    padding: 50px;
+    height: 90vh;
+    font-size: x-large;
+  }
+  
+  
+  .title {
+    font-size: x-large;
+  }
+  
+  .projects-title {
+  border-right: 2px var(--white) solid;
+  font-size: x-large;
+  padding-right: 7px;
+  
+  }
+
+  .description{
+    width: 27ch;
+  }
+  
+  .project{
+    display: flex;                 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+   .iconProjects{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    padding: 0px;
+    margin: 10px;
+    fill: rgba(255, 217, 0, 0.954);
+    transition: 1s
+   }
+
+   .iconProjects:hover{
+    fill: rgb(228, 14, 14)
+  }
+
+   .packages{
+    font-weight: 600;
+    text-align: center;
+   }
+
+   .projectTitle{
+    font-size: x-large;
+    margin-bottom: 10px;
+   }
+  
+  footer p{
+    text-align: center;
+  }
+
+  body{
+    position: relative;
+    min-height: 90vh;
+    background: linear-gradient(46deg, #0a192f 59.61%, #213c63 102.67%) ; 
+    /* display: flex; */
+  }
+
+  #footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.iconLink{
+    position: relative;
+    top: 50px;
+    /* display: flex; */
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 25px;
+    fill: rgba(255, 217, 0, 0.954);
+    transition: 1s;  
+}
+
+.iconLink:hover{
+  fill: rgb(228, 14, 14)
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 20px;
+    fill: gold;
+    transition: 1s;
+}
+
+.github:hover{
+  fill: rgb(228, 14, 14)
+}
+
+.CV{
+    fill: var(--brown);
+}
+.innerRect{
+    fill: white;
+} 
+
+
+#contact.home-section.wg-contact { 
+    font-weight: 400;
+    text-align: left;
+    font-size: 1em;
+    box-sizing: border-box;
+    display: block;
+    animation: intro 0.3s both;
+    animation-delay: 0.15s;
+    padding: 60px 0 60px 0;
+  }
+  
+  #contact-header{
+  text-align: left;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--brown);
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: manual;
+  font-size: 1rem;
+  margin: 20px 35px;
+  
+  }
+  
+  .package{
+    display: flex;
+    flex-direction: column;
+  }
+  form{
+    margin: 0px 30px;
+  }
+ 
+  .btn.btn-outline-primary.px-3.py-2{
+  box-sizing: border-box;
+  margin: 0;
+  overflow: visible;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  color: var(--brown);
+  border-color: var(--brown);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: .8rem;
+  line-height: .5;
+  border-radius: .3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  }
+
+  #send{
+    justify-content: center;
+    text-align: center;
+    margin: 10px 5px
+  }
+
+  .row.contact-widget{
+  font-weight: 400;
+  text-align: left;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;}
+  
+  
+  .mb-3{
+  font-weight: 400;
+  text-align: left;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+  form{
+  font-weight: 400;
+  text-align: left;
+  font-size: 1rem;
+  box-sizing: border-box;}
+  
+  .form-group.form-inline{
+  font-weight: 400;
+  text-align: left;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;}
+  
+  .sr-only{
+    font-weight: 400;
+    text-align: left;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .form-control.w-100{
+    box-sizing: border-box;
+    overflow: visible;
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width: 100% ;
+  }
+  
+  label{
+    font-weight: 400;
+    text-align: left;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .form-group{
+    font-weight: 400;
+    text-align: left;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;}
+  
+    #inputMessage{
+    box-sizing: border-box;
+    overflow: auto;
+    resize: vertical;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+
+
+#skillTitle{
+    text-align: center;
+    font-size: x-large;
+}
+
+#skillPoints{
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    line-height: 1.6 ;
+}
+
+.resumeHead{
+    text-align: center;
+    font-size: x-large;
+}
+
+
+.endType{
+    text-align: center;
+    font-size: x-large;
+}
+
+.general{ 
+  display: flex;
+  text-align: left;
+  font-size: x-large;
+  justify-content: center;
+  line-height: 1.6 ;
+}
+
+
+
+
+
+
+  @media screen and (max-width: 992px){
+    /* When viewing on larger monitors the 2px borders were hard to see so increased it to 6px for screens above 992px */
+
+    .profile{
+      border-right: var(--lightblue) solid 6px;
+    }
+
+    .container{
+        grid-template-columns: repeat(2,1fr);
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the page elements in a column when viewing on smaller screens */
+    nav,
+    body,
+    .container-1,
+    .container-2,
+    .container-3,
+    .contact,
+    #skillPoints {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100vw;
+    }
+
+  
+    /* Borders needed to be adjusted to make sense on smaller screens so removed in some sections and moved from right to bottom on others */
+    
+    .projects-title {
+      border: 0
+    }
+    .profile {
+      border-bottom: var(--lightblue) solid 2px;
+      border-right: 0;
+      height:auto
+    }
+
+    .bio{
+      height:auto
+    }
+
+    .container{
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .general{
+
+    }
+  
+  }
