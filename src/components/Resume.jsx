@@ -1,4 +1,29 @@
 import React from 'react'
+import { motion } from 'framer-motion';
+
+const leftVariant = {
+  hidden:{
+    x: -800
+  },
+  visible:{
+    x: 0,
+    transition: {
+      duration: 1.1
+    }
+  }
+}
+
+const rightVariant = {
+  hidden:{
+    x: 800
+  },
+  visible:{
+    x: 0,
+    transition: {
+      duration: 0.9
+    }
+  }
+}
 
 //Resume Component
 function Resume() {
@@ -8,7 +33,8 @@ function Resume() {
       <h4> Skills and Proficiencies:</h4> <br/>
       </div>
       <div id='skillPoints'>
-        <div className='frontend'>
+      <motion.div variants={leftVariant} initial="hidden" animate="visible">
+        <div className='skillend'>
           <h4 className='endType'>Front End</h4> <br />
           <ul>
             <li>HTML5</li>
@@ -21,22 +47,24 @@ function Resume() {
             <li>Bulma</li>
           </ul> <br />
         </div>
-        <div id='backend'>
-        <h4 className='endType'>Back End</h4><br />
-          <ul>
-            <li>APIs</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>SQL / MySQL / Sequelize</li>
-            <li>Inquirer</li>
-            <li>MongoDB / Mongoose</li>
-            <li>GraphQL</li>
-            <li>JSON</li>
-          </ul> <br /> 
-        </div>
+        </motion.div>
+        <motion.div variants={rightVariant} initial="hidden" animate="visible">
+          <div className='skillend'>
+            <h4 className='endType'>Back End</h4><br />
+            <ul>
+              <li>APIs</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>SQL / MySQL / Sequelize</li>
+              <li>Inquirer</li>
+              <li>MongoDB / Mongoose</li>
+              <li>GraphQL</li>
+              <li>JSON</li>
+            </ul> <br /> 
+          </div>
+        </motion.div>
       </div>
       <div className='general'>
-      
         <ul className='last' >
         <h4 className='resumeHead'>General</h4> <br></br>
             <li>MERN Stack</li>
@@ -47,7 +75,7 @@ function Resume() {
         </ul> <br></br><br />
         
       </div>
-      <br></br> <br></br><h4 className='resumeHead'>A copy of my Resume can be downloaded <a href='https://drive.google.com/file/d/1D6-nPLz84zxxUJtwQucDHUmnEFuTJvTV/view?usp=sharing' target= 'blank'>here</a></h4><br />
+      <br></br> <br></br><h4 className='resumeHead'>A copy of my Resume can be downloaded from icon below!</h4><br />
     </div>
   )
 }

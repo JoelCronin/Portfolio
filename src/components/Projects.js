@@ -1,12 +1,26 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 //Project Component
 export default function Projects({lists}) {
+
+  const topVariant = {
+    hidden:{
+      x: -800
+    },
+    visible:{
+      x: 0,
+      transition: {
+        duration: 1.1
+      }
+    }
+  }
 
   return (
     <section className="container"> 
     {/* Maps through list of projects and then renders them all as below */}
         {lists.map((list) => (
+          <motion.div variants={topVariant} initial="hidden" animate="visible">
           <div className= "projectContainer" key={list.id}>
             <a href={list.deployed} target= 'blank'>
             <article className="project" >
@@ -18,6 +32,7 @@ export default function Projects({lists}) {
             </article>
             </a>
           </div> 
+          </motion.div>
         ))}
   </section> 
   );

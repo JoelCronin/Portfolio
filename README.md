@@ -6,10 +6,11 @@ In this project, I used my knowledge of React to build a portfolio that I can pr
 
 * About Me
 * Completed Projects 
-* Contact
 * Resume
 
 I used the component, props and states functionality provided by React to add some dynamism to the portfolio and enjoyed the process of making this site.
+
+For full commit history see https://github.com/JoelCronin/cautious-dollop
 
 ![Screenshot](./src/assets/Screenshot.png)
 
@@ -46,5 +47,5 @@ This application is covered under the following license: The Unlicence
 
 ## Links
 
-You can see the deployed version of this by [clicking here](https://joelcronin.github.io/cautious-dollop/)
+You can see the deployed version of this by [clicking here](https://joelcronin.github.io/portfolio/)
 

@@ -102,7 +102,7 @@
     border-right: var(--lightblue) 2px solid;
     padding: 4px;
     padding: 50px;
-    height: 90vh;
+    height: 88vh;
   }
   
   .profPic {
@@ -120,7 +120,7 @@
     border-right: var(--lightblue) 2px solid;
     padding: 4px;
     padding: 50px;
-    height: 90vh;
+    height: 88vh;
     font-size: x-large;
   }
   
@@ -181,7 +181,7 @@
 
   body{
     position: relative;
-    min-height: 90vh;
+    min-height: 88vh;
     background: linear-gradient(46deg, #0a192f 59.61%, #213c63 102.67%) ; 
     /* display: flex; */
   }
@@ -424,7 +424,11 @@
     justify-content: space-around;
     font-size: x-large;
     line-height: 1.6 ;
+    margin: 0 auto;
 }
+
+
+
 
 .resumeHead{
     text-align: center;
@@ -501,8 +505,14 @@
       grid-template-columns: repeat(1,1fr);
     }
 
-    .general{
+    .general li{
+      text-align: left;
+      width: 250px
+    }
 
+    .skillend li {
+      text-align: left;
+      width: 250px
     }
   
   }
